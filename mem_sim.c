@@ -109,14 +109,14 @@ void print_statistics(uint32_t num_cache_tag_bits, uint32_t cache_offset_bits, r
 typedef struct {
     uint32_t tag;
     uint32_t valid;
+    uint32_t LRU;
+    uint32_t FIFO;
 } block_t;
 
 
 typedef struct {
     uint32_t index;
     block_t *blocks;
-    uint32_t *LRU;
-    struct elem *FIFO;
 } set_t;
 
 
@@ -125,47 +125,19 @@ typedef struct {
 } cache_t;
 
 
-typedef struct {
-    uint32_t val;
-    struct elem *next;
-} elem;
-
-
-void insertq(elem *qhead, uint32_t val) {
-    elem *cur = qhead;
-	while (cur->next != NULL)
-		cur = cur->next;
-
-	cur->next = malloc(sizeof(elem));
-	cur = cur->next;
-	cur->val = val;
-	cur->next = NULL;
-}
-
-
-void removeq(elem *qhead) {
-    
-	qhead = qhead->next;
-}
-
-
-uint32_t sizeq(elem *qhead) {
-
-	uint32_t size = 0;
-	elem *cur = qhead;
-	while (cur != NULL) {
-		size++;
-		cur = cur->next;
-	}
-
-	return size;
-
-}
-
-
 uint32_t g_cache_index_bits = 0;
 uint32_t g_num_cache_sets = 0;
 cache_t my_cache;
+
+
+int is_full(set_t set) {
+    for (int i = 0; i < associativity; i++) {
+        block_t curr_block = set.blocks[i];
+        if (curr_block.valid == 0)
+            return 0;
+    }
+    return 1;
+}
 
 
 uint32_t get_tag(uint32_t address) {
@@ -187,7 +159,7 @@ uint32_t get_index(uint32_t address) {
 }
 
 
-void access_cache(uint32_t address) {
+void access_cache(uint32_t address, uint32_t access_number) {
     
     uint32_t tag = get_tag(address);
     uint32_t index = get_index(address);
@@ -198,6 +170,7 @@ void access_cache(uint32_t address) {
         block_t curr_block = curr_set.blocks[i];
         if (curr_block.tag == tag && curr_block.valid) {
             g_result.cache_hits++;
+            curr_block.LRU = access_number;
             return;
         }
     }
@@ -205,24 +178,44 @@ void access_cache(uint32_t address) {
     g_result.cache_misses++;
 
     if (replacement_policy == FIFO) {
-        if (sizeq(curr_set.FIFO) == number_of_cache_blocks) {
-            uint32_t block_idx = removeq(curr_set.FIFO);
-            insertq(curr_set.FIFO, block_idx);
+        /* keep track of which block to evict 
+        in case no empty space is found */
+        uint32_t evicted = curr_set.blocks[0].FIFO;
+        uint32_t evicted_idx = 0;
+        /* loop through the set, looking for invalid data
+        that can be overwritten , while at the same time
+        looking for the FIFO block in case it is necessary */
+        for (int i = 0; i < associativity; i++) {
+            block_t curr_block = curr_set.blocks[i];
+            /* if curr_block was added before the one that
+            is to be evicted, set the curr one to be evicted
+            instead */
+            if (curr_block.FIFO < evicted) {
+                evicted = curr_block.FIFO;
+                evicted_idx = i;
+            }
+            // if there is free space, use it and finish this access
+            if (curr_block.valid == 0) {
+                curr_block.tag = tag;
+                curr_block.valid = 1;
+                curr_block.FIFO = access_number;
+                return;
+            }
         }
-        curr_set.blocks[FI].tag = tag;
-        curr_set.blocks[FI].valid = 1;
-
-    }
-    else if (replacement_policy == LRU) {
-        // IMPLEMENT ME!
-        uint32_t LRU = curr_set.LRU;
-        curr_set.blocks[LRU].tag = tag;
-        curr_set.blocks[LRU].valid = 1;
+        /* if execution reaches this point, there is no free space
+        so we evict the block chosen above */
+        // since it should already be valid, no need to set valid bit
+        curr_set.blocks[evicted_idx].tag = tag;
     }
     else {
-        uint32_t r = rand() % number_of_cache_blocks;
-        curr_set.blocks[r].tag = tag;
-        curr_set.blocks[r].valid = 1;
+        for (int i = 0; i < associativity; i ++) {
+            if (is_full(curr_set)) {
+                uint32_t r = rand() % number_of_cache_blocks;
+                curr_set.blocks[r].tag = tag;
+                curr_set.blocks[r].valid = 1;
+            }
+        }
+        
     }
 
 }
@@ -306,15 +299,17 @@ int main(int argc, char** argv) {
     for (int i = 0; i < sizeof(my_cache.sets); i++) {
         set_t curr_set = my_cache.sets[i];
         curr_set.index = i;
-        curr_set.FIFO = malloc(number_of_cache_blocks * sizeof(elem));
-        curr_set.LRU = 0;
         curr_set.blocks = malloc(associativity * sizeof(block_t));
         for (int j = 0; j < sizeof(curr_set.blocks); j++) {
             block_t curr_block = curr_set.blocks[j];
             curr_block.valid = 0;
             curr_block.tag = -1;
+            curr_block.FIFO = -1;
+            curr_block.LRU = -1;
         }
     }
+
+    uint32_t access_number = 0;
 
     mem_access_t access;
     /* Loop until the whole trace file has been read. */
@@ -326,7 +321,9 @@ int main(int argc, char** argv) {
 
         /* Add your code here */
 
-        access_cache(access.address);
+        access_cache(access.address, access_number);
+
+        access_number++;
 
     }
 
