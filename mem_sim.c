@@ -350,9 +350,8 @@ int main(int argc, char** argv) {
 
     }
     
-    for (int i = 0; i < sizeof(my_cache.sets); i++) {
-        set_t curr_set = my_cache.sets[i];
-        free(curr_set.blocks);
+    for (int i = 0; i < g_num_cache_sets; i++) {
+        free(my_cache.sets[i].blocks);
     }
 
     free(my_cache.sets);
