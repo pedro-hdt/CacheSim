@@ -71,7 +71,7 @@ mem_access_t read_transaction(FILE *ptr_file) {
     if (fgets(buf, 1000, ptr_file)!= NULL) {
         /* Get the address */
         token = strsep(&string, " \n");
-        access.address = (uint32_t)strtol(token, NULL, 16);
+        access.address = (uint32_t)strtoul(token, NULL, 16);
         return access;
     }
 
@@ -109,13 +109,13 @@ void print_statistics(uint32_t num_cache_tag_bits, uint32_t cache_offset_bits, r
 typedef struct {
     uint32_t tag;
     uint32_t valid;
-    uint32_t LRU;
-    uint32_t FIFO;
+    uint32_t last_access;
+    uint32_t added_on;
 } block_t;
 
 
 typedef struct {
-    uint32_t index;
+    uint32_t s_idx;
     block_t *blocks;
 } set_t;
 
@@ -130,47 +130,44 @@ uint32_t g_num_cache_sets = 0;
 cache_t my_cache;
 
 
-int is_full(set_t set) {
-    for (int i = 0; i < associativity; i++) {
-        block_t curr_block = set.blocks[i];
-        if (curr_block.valid == 0)
-            return 0;
-    }
-    return 1;
-}
-
-
 uint32_t get_tag(uint32_t address) {
     // create a bitmask to isolate the part of the address that corresponds to the tag
     // we know the number of tag bits, so we can create a 32-bit max value
     // and then shift left by the right amount
-    uint32_t bitmask = 0xffffffff << (32 - g_num_cache_tag_bits);
+    uint32_t bitmask = 0xffffffff;
+    bitmask >>= 32 - g_num_cache_tag_bits;
+    bitmask <<= 32 - g_num_cache_tag_bits;
     // doing the bitwise AND operation, we get the tag
     uint32_t tag = address & bitmask;
+    tag >>= 32 - g_num_cache_tag_bits;
     return tag;
 }
 
 uint32_t get_index(uint32_t address) {
     uint32_t bitmask = 0xffffffff;
+    bitmask <<= g_num_cache_tag_bits;
     bitmask >>= g_num_cache_tag_bits;
+    bitmask >>= g_cache_offset_bits;
     bitmask <<= g_cache_offset_bits;
     uint32_t index = address & bitmask;
+    index >>= g_cache_offset_bits;
     return index;
 }
+
 
 
 void access_cache(uint32_t address, uint32_t access_number) {
     
     uint32_t tag = get_tag(address);
     uint32_t index = get_index(address);
-
     set_t curr_set = my_cache.sets[index];
 
     for (int i = 0; i < associativity; i++) {
         block_t curr_block = curr_set.blocks[i];
         if (curr_block.tag == tag && curr_block.valid) {
             g_result.cache_hits++;
-            curr_block.LRU = access_number;
+            curr_block.last_access = access_number;
+            curr_set.blocks[i] = curr_block;
             return;
         }
     }
@@ -180,8 +177,8 @@ void access_cache(uint32_t address, uint32_t access_number) {
     if (replacement_policy == FIFO) {
         /* keep track of which block to evict 
         in case no empty space is found */
-        uint32_t evicted = curr_set.blocks[0].FIFO;
-        uint32_t evicted_idx = 0;
+        uint32_t first_in = curr_set.blocks[0].added_on;
+        uint32_t first_in_idx = 0;
         /* loop through the set, looking for invalid data
         that can be overwritten , while at the same time
         looking for the FIFO block in case it is necessary */
@@ -190,34 +187,62 @@ void access_cache(uint32_t address, uint32_t access_number) {
             /* if curr_block was added before the one that
             is to be evicted, set the curr one to be evicted
             instead */
-            if (curr_block.FIFO < evicted) {
-                evicted = curr_block.FIFO;
-                evicted_idx = i;
+            if (curr_block.added_on < first_in) {
+                first_in = curr_block.added_on;
+                first_in_idx = i;
             }
             // if there is free space, use it and finish this access
             if (curr_block.valid == 0) {
                 curr_block.tag = tag;
                 curr_block.valid = 1;
-                curr_block.FIFO = access_number;
+                curr_block.added_on = access_number;
+                curr_set.blocks[i] = curr_block;
                 return;
             }
         }
         /* if execution reaches this point, there is no free space
-        so we evict the block chosen above */
+        so we evict the block that was first written */
         // since it should already be valid, no need to set valid bit
-        curr_set.blocks[evicted_idx].tag = tag;
+        curr_set.blocks[first_in_idx].added_on = access_number;
+        curr_set.blocks[first_in_idx].tag = tag;
     }
-    else {
-        for (int i = 0; i < associativity; i ++) {
-            if (is_full(curr_set)) {
-                uint32_t r = rand() % number_of_cache_blocks;
-                curr_set.blocks[r].tag = tag;
-                curr_set.blocks[r].valid = 1;
+    else if (replacement_policy == LRU) {
+
+        uint32_t least_recent_access = curr_set.blocks[0].last_access;
+        uint32_t least_recent_access_idx = 0;
+
+        for (int i = 0; i < associativity; i++) {
+            block_t curr_block = curr_set.blocks[i];
+            if (curr_block.last_access < least_recent_access) {
+                least_recent_access = curr_block.last_access;
+                least_recent_access_idx = i; 
             }
+            if (curr_block.valid == 0) {
+                curr_block.tag = tag;
+                curr_block.valid = 1;
+                curr_block.last_access = access_number;
+                curr_set.blocks[i] = curr_block;
+                return;
+            }   
         }
-        
+        curr_set.blocks[least_recent_access_idx].last_access = access_number;
+        curr_set.blocks[least_recent_access_idx].tag = tag;
     }
 
+    else {
+        for (int i = 0; i < associativity; i ++) {
+            block_t curr_block = curr_set.blocks[i];
+            if (curr_block.valid == 0) {
+                curr_block.tag = tag;
+                curr_block.valid = 1;
+                curr_set.blocks[i] = curr_block;
+                return;
+            }
+        }
+        uint32_t r = rand() % associativity;
+        curr_set.blocks[r].tag = tag;
+        curr_set.blocks[r].valid = 1;
+    }
 }
 
 
@@ -296,16 +321,14 @@ int main(int argc, char** argv) {
 
     my_cache.sets = malloc(g_num_cache_sets * sizeof(set_t));
     
-    for (int i = 0; i < sizeof(my_cache.sets); i++) {
-        set_t curr_set = my_cache.sets[i];
-        curr_set.index = i;
-        curr_set.blocks = malloc(associativity * sizeof(block_t));
-        for (int j = 0; j < sizeof(curr_set.blocks); j++) {
-            block_t curr_block = curr_set.blocks[j];
-            curr_block.valid = 0;
-            curr_block.tag = -1;
-            curr_block.FIFO = -1;
-            curr_block.LRU = -1;
+    for (int i = 0; i < g_num_cache_sets; i++) {
+        my_cache.sets[i].s_idx = i;
+        my_cache.sets[i].blocks = malloc(associativity * sizeof(block_t));
+        for (int j = 0; j < associativity; j++) {
+            my_cache.sets[i].blocks[j].valid = 0;
+            my_cache.sets[i].blocks[j].tag = -1;
+            my_cache.sets[i].blocks[j].added_on = UINT32_MAX;
+            my_cache.sets[i].blocks[j].last_access = UINT32_MAX;
         }
     }
 
@@ -326,6 +349,13 @@ int main(int argc, char** argv) {
         access_number++;
 
     }
+    
+    for (int i = 0; i < sizeof(my_cache.sets); i++) {
+        set_t curr_set = my_cache.sets[i];
+        free(curr_set.blocks);
+    }
+
+    free(my_cache.sets);
 
     /* Do not modify code below. */
     /* Make sure that all the parameters are appropriately populated. */
