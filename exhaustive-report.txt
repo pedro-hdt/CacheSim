@@ -1696,8 +1696,8 @@ input:cache_block_size: 32
 
 CacheTagBits:24
 CacheOffsetBits:5
-Cache:hits:1220199
-Cache:misses:245508
+Cache:hits:1220169
+Cache:misses:245538
 Cache:hit-rate:83.2%
 
 
@@ -1709,8 +1709,8 @@ input:cache_block_size: 64
 
 CacheTagBits:23
 CacheOffsetBits:6
-Cache:hits:1298980
-Cache:misses:166727
+Cache:hits:1299290
+Cache:misses:166417
 Cache:hit-rate:88.6%
 
 
@@ -1722,9 +1722,9 @@ input:cache_block_size: 32
 
 CacheTagBits:25
 CacheOffsetBits:5
-Cache:hits:1224761
-Cache:misses:240946
-Cache:hit-rate:83.6%
+Cache:hits:1224529
+Cache:misses:241178
+Cache:hit-rate:83.5%
 
 
 input:trace_file: mem_trace.txt
@@ -1735,8 +1735,8 @@ input:cache_block_size: 64
 
 CacheTagBits:24
 CacheOffsetBits:6
-Cache:hits:1297887
-Cache:misses:167820
+Cache:hits:1297917
+Cache:misses:167790
 Cache:hit-rate:88.6%
 
 
@@ -1748,8 +1748,8 @@ input:cache_block_size: 32
 
 CacheTagBits:26
 CacheOffsetBits:5
-Cache:hits:1224551
-Cache:misses:241156
+Cache:hits:1224588
+Cache:misses:241119
 Cache:hit-rate:83.5%
 
 
@@ -1761,8 +1761,8 @@ input:cache_block_size: 64
 
 CacheTagBits:25
 CacheOffsetBits:6
-Cache:hits:1301162
-Cache:misses:164545
+Cache:hits:1301094
+Cache:misses:164613
 Cache:hit-rate:88.8%
 
 
@@ -1774,9 +1774,9 @@ input:cache_block_size: 32
 
 CacheTagBits:27
 CacheOffsetBits:5
-Cache:hits:1224398
-Cache:misses:241309
-Cache:hit-rate:83.5%
+Cache:hits:1224764
+Cache:misses:240943
+Cache:hit-rate:83.6%
 
 
 input:trace_file: mem_trace.txt
@@ -1787,8 +1787,8 @@ input:cache_block_size: 64
 
 CacheTagBits:26
 CacheOffsetBits:6
-Cache:hits:1300168
-Cache:misses:165539
+Cache:hits:1300470
+Cache:misses:165237
 Cache:hit-rate:88.7%
 
 
@@ -1826,8 +1826,8 @@ input:cache_block_size: 32
 
 CacheTagBits:22
 CacheOffsetBits:5
-Cache:hits:1310706
-Cache:misses:155001
+Cache:hits:1310946
+Cache:misses:154761
 Cache:hit-rate:89.4%
 
 
@@ -1839,8 +1839,8 @@ input:cache_block_size: 64
 
 CacheTagBits:21
 CacheOffsetBits:6
-Cache:hits:1369889
-Cache:misses:95818
+Cache:hits:1370331
+Cache:misses:95376
 Cache:hit-rate:93.5%
 
 
@@ -1852,8 +1852,8 @@ input:cache_block_size: 32
 
 CacheTagBits:23
 CacheOffsetBits:5
-Cache:hits:1312801
-Cache:misses:152906
+Cache:hits:1312907
+Cache:misses:152800
 Cache:hit-rate:89.6%
 
 
@@ -1865,8 +1865,8 @@ input:cache_block_size: 64
 
 CacheTagBits:22
 CacheOffsetBits:6
-Cache:hits:1388786
-Cache:misses:76921
+Cache:hits:1389095
+Cache:misses:76612
 Cache:hit-rate:94.8%
 
 
@@ -1878,8 +1878,8 @@ input:cache_block_size: 32
 
 CacheTagBits:24
 CacheOffsetBits:5
-Cache:hits:1314737
-Cache:misses:150970
+Cache:hits:1314674
+Cache:misses:151033
 Cache:hit-rate:89.7%
 
 
@@ -1891,8 +1891,8 @@ input:cache_block_size: 64
 
 CacheTagBits:23
 CacheOffsetBits:6
-Cache:hits:1392884
-Cache:misses:72823
+Cache:hits:1392907
+Cache:misses:72800
 Cache:hit-rate:95.0%
 
 
@@ -1904,8 +1904,8 @@ input:cache_block_size: 32
 
 CacheTagBits:25
 CacheOffsetBits:5
-Cache:hits:1314773
-Cache:misses:150934
+Cache:hits:1314707
+Cache:misses:151000
 Cache:hit-rate:89.7%
 
 
@@ -1917,8 +1917,8 @@ input:cache_block_size: 64
 
 CacheTagBits:24
 CacheOffsetBits:6
-Cache:hits:1391896
-Cache:misses:73811
+Cache:hits:1391876
+Cache:misses:73831
 Cache:hit-rate:95.0%
 
 
@@ -1930,8 +1930,8 @@ input:cache_block_size: 32
 
 CacheTagBits:26
 CacheOffsetBits:5
-Cache:hits:1314782
-Cache:misses:150925
+Cache:hits:1314744
+Cache:misses:150963
 Cache:hit-rate:89.7%
 
 
@@ -1943,8 +1943,8 @@ input:cache_block_size: 64
 
 CacheTagBits:25
 CacheOffsetBits:6
-Cache:hits:1392876
-Cache:misses:72831
+Cache:hits:1392699
+Cache:misses:73008
 Cache:hit-rate:95.0%
 
 
@@ -1956,8 +1956,8 @@ input:cache_block_size: 32
 
 CacheTagBits:27
 CacheOffsetBits:5
-Cache:hits:1314492
-Cache:misses:151215
+Cache:hits:1314540
+Cache:misses:151167
 Cache:hit-rate:89.7%
 
 
@@ -1969,8 +1969,8 @@ input:cache_block_size: 64
 
 CacheTagBits:26
 CacheOffsetBits:6
-Cache:hits:1393152
-Cache:misses:72555
+Cache:hits:1393133
+Cache:misses:72574
 Cache:hit-rate:95.0%
 
 
@@ -2008,9 +2008,9 @@ input:cache_block_size: 32
 
 CacheTagBits:20
 CacheOffsetBits:5
-Cache:hits:1415117
-Cache:misses:50590
-Cache:hit-rate:96.5%
+Cache:hits:1415239
+Cache:misses:50468
+Cache:hit-rate:96.6%
 
 
 input:trace_file: mem_trace.txt
@@ -2021,8 +2021,8 @@ input:cache_block_size: 64
 
 CacheTagBits:19
 CacheOffsetBits:6
-Cache:hits:1444821
-Cache:misses:20886
+Cache:hits:1444733
+Cache:misses:20974
 Cache:hit-rate:98.6%
 
 
@@ -2034,8 +2034,8 @@ input:cache_block_size: 32
 
 CacheTagBits:21
 CacheOffsetBits:5
-Cache:hits:1428454
-Cache:misses:37253
+Cache:hits:1428643
+Cache:misses:37064
 Cache:hit-rate:97.5%
 
 
@@ -2047,9 +2047,9 @@ input:cache_block_size: 64
 
 CacheTagBits:20
 CacheOffsetBits:6
-Cache:hits:1445955
-Cache:misses:19752
-Cache:hit-rate:98.7%
+Cache:hits:1445906
+Cache:misses:19801
+Cache:hit-rate:98.6%
 
 
 input:trace_file: mem_trace.txt
@@ -2060,8 +2060,8 @@ input:cache_block_size: 32
 
 CacheTagBits:22
 CacheOffsetBits:5
-Cache:hits:1432005
-Cache:misses:33702
+Cache:hits:1432344
+Cache:misses:33363
 Cache:hit-rate:97.7%
 
 
@@ -2073,9 +2073,9 @@ input:cache_block_size: 64
 
 CacheTagBits:21
 CacheOffsetBits:6
-Cache:hits:1448915
-Cache:misses:16792
-Cache:hit-rate:98.9%
+Cache:hits:1448835
+Cache:misses:16872
+Cache:hit-rate:98.8%
 
 
 input:trace_file: mem_trace.txt
@@ -2086,8 +2086,8 @@ input:cache_block_size: 32
 
 CacheTagBits:23
 CacheOffsetBits:5
-Cache:hits:1435892
-Cache:misses:29815
+Cache:hits:1435854
+Cache:misses:29853
 Cache:hit-rate:98.0%
 
 
@@ -2099,8 +2099,8 @@ input:cache_block_size: 64
 
 CacheTagBits:22
 CacheOffsetBits:6
-Cache:hits:1449419
-Cache:misses:16288
+Cache:hits:1449513
+Cache:misses:16194
 Cache:hit-rate:98.9%
 
 
@@ -2112,8 +2112,8 @@ input:cache_block_size: 32
 
 CacheTagBits:24
 CacheOffsetBits:5
-Cache:hits:1435764
-Cache:misses:29943
+Cache:hits:1435831
+Cache:misses:29876
 Cache:hit-rate:98.0%
 
 
@@ -2125,8 +2125,8 @@ input:cache_block_size: 64
 
 CacheTagBits:23
 CacheOffsetBits:6
-Cache:hits:1449819
-Cache:misses:15888
+Cache:hits:1449857
+Cache:misses:15850
 Cache:hit-rate:98.9%
 
 
@@ -2138,8 +2138,8 @@ input:cache_block_size: 32
 
 CacheTagBits:25
 CacheOffsetBits:5
-Cache:hits:1436470
-Cache:misses:29237
+Cache:hits:1436330
+Cache:misses:29377
 Cache:hit-rate:98.0%
 
 
@@ -2151,8 +2151,8 @@ input:cache_block_size: 64
 
 CacheTagBits:24
 CacheOffsetBits:6
-Cache:hits:1449657
-Cache:misses:16050
+Cache:hits:1449853
+Cache:misses:15854
 Cache:hit-rate:98.9%
 
 
@@ -2164,8 +2164,8 @@ input:cache_block_size: 32
 
 CacheTagBits:26
 CacheOffsetBits:5
-Cache:hits:1436562
-Cache:misses:29145
+Cache:hits:1436573
+Cache:misses:29134
 Cache:hit-rate:98.0%
 
 
@@ -2177,8 +2177,8 @@ input:cache_block_size: 64
 
 CacheTagBits:25
 CacheOffsetBits:6
-Cache:hits:1449801
-Cache:misses:15906
+Cache:hits:1449754
+Cache:misses:15953
 Cache:hit-rate:98.9%
 
 
@@ -2190,8 +2190,8 @@ input:cache_block_size: 32
 
 CacheTagBits:27
 CacheOffsetBits:5
-Cache:hits:1436536
-Cache:misses:29171
+Cache:hits:1436591
+Cache:misses:29116
 Cache:hit-rate:98.0%
 
 
@@ -2203,8 +2203,8 @@ input:cache_block_size: 64
 
 CacheTagBits:26
 CacheOffsetBits:6
-Cache:hits:1449927
-Cache:misses:15780
+Cache:hits:1449838
+Cache:misses:15869
 Cache:hit-rate:98.9%
 
 
@@ -2242,8 +2242,8 @@ input:cache_block_size: 32
 
 CacheTagBits:18
 CacheOffsetBits:5
-Cache:hits:1445999
-Cache:misses:19708
+Cache:hits:1445951
+Cache:misses:19756
 Cache:hit-rate:98.7%
 
 
@@ -2255,8 +2255,8 @@ input:cache_block_size: 64
 
 CacheTagBits:17
 CacheOffsetBits:6
-Cache:hits:1453434
-Cache:misses:12273
+Cache:hits:1453516
+Cache:misses:12191
 Cache:hit-rate:99.2%
 
 
@@ -2268,8 +2268,8 @@ input:cache_block_size: 32
 
 CacheTagBits:19
 CacheOffsetBits:5
-Cache:hits:1449016
-Cache:misses:16691
+Cache:hits:1449043
+Cache:misses:16664
 Cache:hit-rate:98.9%
 
 
@@ -2281,8 +2281,8 @@ input:cache_block_size: 64
 
 CacheTagBits:18
 CacheOffsetBits:6
-Cache:hits:1456427
-Cache:misses:9280
+Cache:hits:1456502
+Cache:misses:9205
 Cache:hit-rate:99.4%
 
 
@@ -2294,8 +2294,8 @@ input:cache_block_size: 32
 
 CacheTagBits:20
 CacheOffsetBits:5
-Cache:hits:1449209
-Cache:misses:16498
+Cache:hits:1449221
+Cache:misses:16486
 Cache:hit-rate:98.9%
 
 
@@ -2307,8 +2307,8 @@ input:cache_block_size: 64
 
 CacheTagBits:19
 CacheOffsetBits:6
-Cache:hits:1456646
-Cache:misses:9061
+Cache:hits:1456684
+Cache:misses:9023
 Cache:hit-rate:99.4%
 
 
@@ -2320,8 +2320,8 @@ input:cache_block_size: 32
 
 CacheTagBits:21
 CacheOffsetBits:5
-Cache:hits:1449399
-Cache:misses:16308
+Cache:hits:1449537
+Cache:misses:16170
 Cache:hit-rate:98.9%
 
 
@@ -2333,8 +2333,8 @@ input:cache_block_size: 64
 
 CacheTagBits:20
 CacheOffsetBits:6
-Cache:hits:1456696
-Cache:misses:9011
+Cache:hits:1456693
+Cache:misses:9014
 Cache:hit-rate:99.4%
 
 
@@ -2346,8 +2346,8 @@ input:cache_block_size: 32
 
 CacheTagBits:22
 CacheOffsetBits:5
-Cache:hits:1449503
-Cache:misses:16204
+Cache:hits:1449605
+Cache:misses:16102
 Cache:hit-rate:98.9%
 
 
@@ -2359,8 +2359,8 @@ input:cache_block_size: 64
 
 CacheTagBits:21
 CacheOffsetBits:6
-Cache:hits:1456756
-Cache:misses:8951
+Cache:hits:1456597
+Cache:misses:9110
 Cache:hit-rate:99.4%
 
 
@@ -2372,8 +2372,8 @@ input:cache_block_size: 32
 
 CacheTagBits:23
 CacheOffsetBits:5
-Cache:hits:1449494
-Cache:misses:16213
+Cache:hits:1449530
+Cache:misses:16177
 Cache:hit-rate:98.9%
 
 
@@ -2385,8 +2385,8 @@ input:cache_block_size: 64
 
 CacheTagBits:22
 CacheOffsetBits:6
-Cache:hits:1456744
-Cache:misses:8963
+Cache:hits:1456807
+Cache:misses:8900
 Cache:hit-rate:99.4%
 
 
@@ -2398,8 +2398,8 @@ input:cache_block_size: 32
 
 CacheTagBits:24
 CacheOffsetBits:5
-Cache:hits:1449550
-Cache:misses:16157
+Cache:hits:1449494
+Cache:misses:16213
 Cache:hit-rate:98.9%
 
 
@@ -2411,8 +2411,8 @@ input:cache_block_size: 64
 
 CacheTagBits:23
 CacheOffsetBits:6
-Cache:hits:1456720
-Cache:misses:8987
+Cache:hits:1456700
+Cache:misses:9007
 Cache:hit-rate:99.4%
 
 
@@ -2424,8 +2424,8 @@ input:cache_block_size: 32
 
 CacheTagBits:25
 CacheOffsetBits:5
-Cache:hits:1449541
-Cache:misses:16166
+Cache:hits:1449530
+Cache:misses:16177
 Cache:hit-rate:98.9%
 
 
@@ -2437,8 +2437,8 @@ input:cache_block_size: 64
 
 CacheTagBits:24
 CacheOffsetBits:6
-Cache:hits:1456741
-Cache:misses:8966
+Cache:hits:1456781
+Cache:misses:8926
 Cache:hit-rate:99.4%
 
 
@@ -2450,8 +2450,8 @@ input:cache_block_size: 32
 
 CacheTagBits:26
 CacheOffsetBits:5
-Cache:hits:1449539
-Cache:misses:16168
+Cache:hits:1449487
+Cache:misses:16220
 Cache:hit-rate:98.9%
 
 
@@ -2463,8 +2463,8 @@ input:cache_block_size: 64
 
 CacheTagBits:25
 CacheOffsetBits:6
-Cache:hits:1456756
-Cache:misses:8951
+Cache:hits:1456759
+Cache:misses:8948
 Cache:hit-rate:99.4%
 
 
@@ -2476,8 +2476,8 @@ input:cache_block_size: 32
 
 CacheTagBits:27
 CacheOffsetBits:5
-Cache:hits:1449563
-Cache:misses:16144
+Cache:hits:1449532
+Cache:misses:16175
 Cache:hit-rate:98.9%
 
 
@@ -2489,8 +2489,8 @@ input:cache_block_size: 64
 
 CacheTagBits:26
 CacheOffsetBits:6
-Cache:hits:1456709
-Cache:misses:8998
+Cache:hits:1456736
+Cache:misses:8971
 Cache:hit-rate:99.4%
 
 
