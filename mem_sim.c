@@ -115,7 +115,8 @@ void print_statistics(uint32_t num_cache_tag_bits, uint32_t cache_offset_bits, r
  *  implementation MIGHT break, due to overflow.
  *  However, in most modern systems (64bit), this will mean that it might break
  *  when the number of accesses is larger than 2^64 = 1.8e19. This seems like
- *  a perfectly reasonable constraint to work with.
+ *  a perfectly reasonable constraint to work with. Besides, it is also
+ *  that it actually breaks.
  *  Of course: in the real world, the cache operates continuously, so this
  *  would not be feasible, but for the purpose of this simulator, I consider
  *  it to be.
