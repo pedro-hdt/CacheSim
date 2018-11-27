@@ -92,17 +92,52 @@ void print_statistics(uint32_t num_cache_tag_bits, uint32_t cache_offset_bits, r
     printf("Cache:hit-rate:%2.1f%%\n", cache_total_hits / (float)(cache_total_hits + cache_total_misses) * 100.0);
 }
 
-/*  
+/******************************************************************************
+ *                     MY DATA STRUCTURES START HERE                          *
+ *****************************************************************************/
+
+/******************************************************************************
  *  Data strucutre models for the building blocks of the cache. These ignore
  *  the data in it, as suggested, as it is beyond the point of the assignment
- */
+ *  
+ *  I decided to use an approach that resembles object-orientation due to the
+ *  redability and easy association with the theoretical concepts learned.
+ * 
+ ******************************************************************************/
+
+/*----------------------------------------------------------------------------*
+ *  NOTE ON IMPLEMENTATION DECISION:
+ * 
+ *  To keep track of the block that was first written in memory and the block
+ *  that was least recently used, I have decided to just use the access_number
+ *  as a timestamp. This will work correclty, AS LONG AS THE NUMBER OF ACCESSES
+ *  IS <= UINTMAX_T. Beyond that point, I am aware that this kind of 
+ *  implementation MIGHT break, due to overflow.
+ *  However, in most modern systems (64bit), this will mean that it might break
+ *  when the number of accesses is larger than 2^64 = 1.8e19. This seems like
+ *  a perfectly reasonable constraint to work with.
+ *  Of course: in the real world, the cache operates continuously, so this
+ *  would not be feasible, but for the purpose of this simulator, I consider
+ *  it to be.
+ *  
+ *  Alternatively, one could create a queue data structure and do as follows:
+ *  For FIFO:
+ *      -> everytime a new block is written to (ie. tag is replaced), we would
+ *         push that block to the queue (append it to the end)
+ *      -> for every replacement, pop the block that is the head of the queue,
+ *         which will be the oldest, and replace it
+ *  For LRU, the difference would be that on a hit, we would remove the hit
+ *  block from the queue (regardless of its position), and push it to the end
+ *  again.
+ * 
+ *****************************************************************************/
 
 // models a cache block
 typedef struct {
     uint32_t tag;
-    uint32_t valid;
-    uint32_t last_access; // for LRU
-    uint32_t added_on;    // for FIFO
+    uint8_t valid; // use uint8_t just to save memory
+    uintmax_t last_access; // for LRU
+    uintmax_t added_on;    // for FIFO
 } block_t;
 
 // models a set of cache blocks
@@ -117,12 +152,19 @@ typedef struct {
     set_t *sets;
 } cache_t;
 
+/******************************************************************************
+ *                     MY DATA STRUCTURES END HERE                            *
+ *****************************************************************************/
 
-/* Create a global variable for the cache so it can easily be 
- * accessed in the different fucntions without passing a pointer
- * around. */ 
+
+/* Create a global variable for the cache so it can easily be accessed in the
+ * different fucntions without passing a pointer to it around.               */ 
 cache_t my_cache;
 
+
+/******************************************************************************
+ *                         MY FUNCTIONS START HERE                            *
+ *****************************************************************************/
 
 uint32_t get_tag(uint32_t address) {
     /* Create a bitmask to isolate the part of the address that corresponds
@@ -270,6 +312,10 @@ void access_cache(uint32_t address, uint32_t access_number) {
     return;
 }
 
+/******************************************************************************
+ *                           MY FUNCTIONS END HERE                            *
+ *****************************************************************************/
+
 
 int main(int argc, char** argv) {
     time_t t;
@@ -335,28 +381,47 @@ int main(int argc, char** argv) {
     /* Do not delete any of the lines below.
      * Use the following snippet and add your code to finish the task. */
 
-    /* You may want to setup your Cache structure here. */
+    /**************************************************************************
+     *                       INITIALISING THE CACHE                           *
+     *************************************************************************/
     
-    // TODO: check if all these variables need to be global!!!
     // Calculate appropriate number of bits for requested configuration
     g_cache_offset_bits = log2(cache_block_size);
     uint32_t num_cache_sets = number_of_cache_blocks / associativity;
     uint32_t cache_index_bits = log2(num_cache_sets);
     g_num_cache_tag_bits = 32 - cache_index_bits - g_cache_offset_bits;
 
+    // Allocate memory for the main encapsulating data structure
     my_cache.sets = malloc(num_cache_sets * sizeof(set_t));
     
     for (int i = 0; i < num_cache_sets; i++) {
-        my_cache.sets[i].blocks = malloc(associativity * sizeof(block_t));
+        set_t *curr_set = &my_cache.sets[i];
+        // Then allocate memory for each set 
+        curr_set->blocks = malloc(associativity * sizeof(block_t));
         for (int j = 0; j < associativity; j++) {
-            my_cache.sets[i].blocks[j].valid = 0;
-            my_cache.sets[i].blocks[j].tag = -1;
-            my_cache.sets[i].blocks[j].added_on = UINT32_MAX;
-            my_cache.sets[i].blocks[j].last_access = UINT32_MAX;
+            // and initialise each block within each set
+            /* We assume the cache starts empty when the program executes
+             * so we set all valid bits to 0 and don't waste resources
+             * initialising the tags, since the valid bits being 0 will prevent
+             * any hits when it is supposedly empty */
+            block_t *curr_block = &curr_set->blocks[j];
+            curr_block->valid = 0;
+            /* for LRU and FIFO, we initialise our "timestamps" to the maximum
+             * value, so we can confidently search for the oldest accesses and
+             * not get "false positives" */
+            curr_block->added_on = UINTMAX_MAX;
+            curr_block->last_access = UINTMAX_MAX;
         }
     }
+    /**************************************************************************
+     *                       END OF CACHE INITIALISATION                      *
+     *************************************************************************/
 
-    uint32_t access_number = 0;
+    /* I introduced an access nubmer for LRU and FIFO *
+     * It works as a timestamp                        */
+    uintmax_t access_number = 0;
+    /**************************************************/
+
 
     mem_access_t access;
     /* Loop until the whole trace file has been read. */
@@ -367,54 +432,28 @@ int main(int argc, char** argv) {
             break;
 
         /**********************************************************************
-         *     MY MAIN CODE STARTS HERE: 
+         *                      MY MAIN CODE STARTS HERE:                     *
          *********************************************************************/
 
-        uint32_t tag = get_tag(address);
-        uint32_t index = get_index(address);
+        access_cache(access.address, access_number);
 
-        /* For readability we introduce a current set. That is, the set
-        * the given address is conditioned to correspond to, given the
-        * associativity. Because the set struct points to the blocks, 
-        * rather than sotring them locally, we don't need to make this
-        * current set a pointer. */
-        set_t curr_set = my_cache.sets[index];
-
-        for (int i = 0; i < associativity; i++) {
-            /* Again, for readability, we introduce a current block. However,
-            * this time it must be a pointer to block in the set, otherwise
-            * the changes would have no effect. */
-            block_t *curr_block = &curr_set.blocks[i];
-            /* On a hit: update last_access field (whether or not LRU is the
-            * replacement policy, since we would have to check ) */
-            if (curr_block->tag == tag && curr_block->valid) {
-                curr_block->last_access = access_number;
-                g_result.cache_hits++; // HIT!
-                return;
-            }
-        }
-
-        // If execution reaches this point:
-        g_result.cache_misses++; // MISS!
-
-        // Write the requested block to cache
-        write_to_cache(tag, curr_set, access_number);
-
-        // Finally, increment the access number
+        // Increment the access number
         access_number++;
 
     }
     
-    // free the allocated memory: first the pointer to each set of blocks
+    /* Once all the accesses in the trace file are compeleted: 
+     * free the allocated memory */
     for (int i = 0; i < num_cache_sets; i++) {
+        // first the pointer to each set of blocks
         free(my_cache.sets[i].blocks);
     }
-    // then the pointer to the sets
+    // then the pointer to the sets (ie. the whole virtual cache)
     free(my_cache.sets);
 
     /**************************************************************************
-     *     END OF MY CODE
-     * ***********************************************************************/
+     *                            AND ENDS HERE                               *
+     *************************************************************************/
 
 
     /* Do not modify code below. */

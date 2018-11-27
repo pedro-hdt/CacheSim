@@ -1,346 +1,346 @@
 1699,1701c1699,1701
-< Cache:hits:1220169
-< Cache:misses:245538
+< Cache:hits:1219993
+< Cache:misses:245714
 < Cache:hit-rate:83.2%
 ---
 > Cache:hits:1220257
 > Cache:misses:245450
 > Cache:hit-rate:83.3%
 1712,1713c1712,1713
-< Cache:hits:1299290
-< Cache:misses:166417
+< Cache:hits:1298977
+< Cache:misses:166730
 ---
 > Cache:hits:1299152
 > Cache:misses:166555
-1725,1727c1725,1727
-< Cache:hits:1224529
-< Cache:misses:241178
-< Cache:hit-rate:83.5%
+1725,1726c1725,1726
+< Cache:hits:1224967
+< Cache:misses:240740
 ---
 > Cache:hits:1225017
 > Cache:misses:240690
-> Cache:hit-rate:83.6%
 1738,1739c1738,1739
-< Cache:hits:1297917
-< Cache:misses:167790
+< Cache:hits:1298093
+< Cache:misses:167614
 ---
 > Cache:hits:1298165
 > Cache:misses:167542
-1751,1753c1751,1753
-< Cache:hits:1224588
-< Cache:misses:241119
-< Cache:hit-rate:83.5%
+1751,1752c1751,1752
+< Cache:hits:1224715
+< Cache:misses:240992
 ---
 > Cache:hits:1225037
 > Cache:misses:240670
-> Cache:hit-rate:83.6%
 1764,1765c1764,1765
-< Cache:hits:1301094
-< Cache:misses:164613
+< Cache:hits:1301272
+< Cache:misses:164435
 ---
 > Cache:hits:1301270
 > Cache:misses:164437
-1777,1779c1777,1779
-< Cache:hits:1224764
-< Cache:misses:240943
-< Cache:hit-rate:83.6%
+1777,1778c1777,1778
+< Cache:hits:1224488
+< Cache:misses:241219
 ---
 > Cache:hits:1224534
 > Cache:misses:241173
-> Cache:hit-rate:83.5%
 1790,1791c1790,1791
-< Cache:hits:1300470
-< Cache:misses:165237
+< Cache:hits:1300228
+< Cache:misses:165479
 ---
 > Cache:hits:1300077
 > Cache:misses:165630
 1829,1830c1829,1830
-< Cache:hits:1310946
-< Cache:misses:154761
+< Cache:hits:1310472
+< Cache:misses:155235
 ---
 > Cache:hits:1310454
 > Cache:misses:155253
 1842,1843c1842,1843
-< Cache:hits:1370331
-< Cache:misses:95376
+< Cache:hits:1369943
+< Cache:misses:95764
 ---
 > Cache:hits:1370259
 > Cache:misses:95448
 1855,1856c1855,1856
-< Cache:hits:1312907
-< Cache:misses:152800
+< Cache:hits:1312595
+< Cache:misses:153112
 ---
 > Cache:hits:1312844
 > Cache:misses:152863
 1868,1869c1868,1869
-< Cache:hits:1389095
-< Cache:misses:76612
+< Cache:hits:1388917
+< Cache:misses:76790
 ---
 > Cache:hits:1389040
 > Cache:misses:76667
 1881,1882c1881,1882
-< Cache:hits:1314674
-< Cache:misses:151033
+< Cache:hits:1314456
+< Cache:misses:151251
 ---
 > Cache:hits:1314521
 > Cache:misses:151186
 1894,1896c1894,1896
-< Cache:hits:1392907
-< Cache:misses:72800
+< Cache:hits:1392675
+< Cache:misses:73032
 < Cache:hit-rate:95.0%
 ---
 > Cache:hits:1393201
 > Cache:misses:72506
 > Cache:hit-rate:95.1%
 1907,1908c1907,1908
-< Cache:hits:1314707
-< Cache:misses:151000
+< Cache:hits:1314845
+< Cache:misses:150862
 ---
 > Cache:hits:1314719
 > Cache:misses:150988
 1920,1922c1920,1922
-< Cache:hits:1391876
-< Cache:misses:73831
+< Cache:hits:1391783
+< Cache:misses:73924
 < Cache:hit-rate:95.0%
 ---
 > Cache:hits:1391455
 > Cache:misses:74252
 > Cache:hit-rate:94.9%
 1933,1934c1933,1934
-< Cache:hits:1314744
-< Cache:misses:150963
+< Cache:hits:1314831
+< Cache:misses:150876
 ---
 > Cache:hits:1314855
 > Cache:misses:150852
 1946,1947c1946,1947
-< Cache:hits:1392699
-< Cache:misses:73008
+< Cache:hits:1392786
+< Cache:misses:72921
 ---
 > Cache:hits:1393104
 > Cache:misses:72603
 1959,1960c1959,1960
-< Cache:hits:1314540
-< Cache:misses:151167
+< Cache:hits:1314632
+< Cache:misses:151075
 ---
 > Cache:hits:1315099
 > Cache:misses:150608
 1972,1973c1972,1973
-< Cache:hits:1393133
-< Cache:misses:72574
+< Cache:hits:1392881
+< Cache:misses:72826
 ---
 > Cache:hits:1392704
 > Cache:misses:73003
 2011,2012c2011,2012
-< Cache:hits:1415239
-< Cache:misses:50468
+< Cache:hits:1415344
+< Cache:misses:50363
 ---
 > Cache:hits:1415510
 > Cache:misses:50197
 2024,2025c2024,2025
-< Cache:hits:1444733
-< Cache:misses:20974
+< Cache:hits:1444824
+< Cache:misses:20883
 ---
 > Cache:hits:1444800
 > Cache:misses:20907
-2037,2038c2037,2038
-< Cache:hits:1428643
-< Cache:misses:37064
+2037,2039c2037,2039
+< Cache:hits:1428258
+< Cache:misses:37449
+< Cache:hit-rate:97.4%
 ---
 > Cache:hits:1428605
 > Cache:misses:37102
-2050,2052c2050,2052
-< Cache:hits:1445906
-< Cache:misses:19801
-< Cache:hit-rate:98.6%
+> Cache:hit-rate:97.5%
+2050,2051c2050,2051
+< Cache:hits:1445936
+< Cache:misses:19771
 ---
 > Cache:hits:1445977
 > Cache:misses:19730
-> Cache:hit-rate:98.7%
 2063,2064c2063,2064
-< Cache:hits:1432344
-< Cache:misses:33363
+< Cache:hits:1431899
+< Cache:misses:33808
 ---
 > Cache:hits:1431909
 > Cache:misses:33798
 2076,2078c2076,2078
-< Cache:hits:1448835
-< Cache:misses:16872
+< Cache:hits:1448845
+< Cache:misses:16862
 < Cache:hit-rate:98.8%
 ---
 > Cache:hits:1448886
 > Cache:misses:16821
 > Cache:hit-rate:98.9%
 2089,2090c2089,2090
-< Cache:hits:1435854
-< Cache:misses:29853
+< Cache:hits:1436160
+< Cache:misses:29547
 ---
 > Cache:hits:1435977
 > Cache:misses:29730
 2102,2103c2102,2103
-< Cache:hits:1449513
-< Cache:misses:16194
+< Cache:hits:1449443
+< Cache:misses:16264
 ---
 > Cache:hits:1449585
 > Cache:misses:16122
 2115,2116c2115,2116
-< Cache:hits:1435831
-< Cache:misses:29876
+< Cache:hits:1435708
+< Cache:misses:29999
 ---
 > Cache:hits:1435863
 > Cache:misses:29844
 2128,2129c2128,2129
-< Cache:hits:1449857
-< Cache:misses:15850
+< Cache:hits:1449674
+< Cache:misses:16033
 ---
 > Cache:hits:1449712
 > Cache:misses:15995
 2141,2142c2141,2142
-< Cache:hits:1436330
-< Cache:misses:29377
+< Cache:hits:1436500
+< Cache:misses:29207
 ---
 > Cache:hits:1436425
 > Cache:misses:29282
 2154,2155c2154,2155
-< Cache:hits:1449853
-< Cache:misses:15854
+< Cache:hits:1449857
+< Cache:misses:15850
 ---
 > Cache:hits:1449675
 > Cache:misses:16032
 2167,2168c2167,2168
-< Cache:hits:1436573
-< Cache:misses:29134
+< Cache:hits:1436602
+< Cache:misses:29105
 ---
 > Cache:hits:1436551
 > Cache:misses:29156
 2180,2181c2180,2181
-< Cache:hits:1449754
-< Cache:misses:15953
+< Cache:hits:1449822
+< Cache:misses:15885
 ---
 > Cache:hits:1449769
 > Cache:misses:15938
 2193,2194c2193,2194
-< Cache:hits:1436591
-< Cache:misses:29116
+< Cache:hits:1436511
+< Cache:misses:29196
 ---
 > Cache:hits:1436372
 > Cache:misses:29335
+2206,2207c2206,2207
+< Cache:hits:1449815
+< Cache:misses:15892
+---
+> Cache:hits:1449838
+> Cache:misses:15869
 2245,2246c2245,2246
-< Cache:hits:1445951
-< Cache:misses:19756
+< Cache:hits:1446103
+< Cache:misses:19604
 ---
 > Cache:hits:1446084
 > Cache:misses:19623
 2258,2259c2258,2259
-< Cache:hits:1453516
-< Cache:misses:12191
+< Cache:hits:1453568
+< Cache:misses:12139
 ---
 > Cache:hits:1453522
 > Cache:misses:12185
 2271,2272c2271,2272
-< Cache:hits:1449043
-< Cache:misses:16664
+< Cache:hits:1449008
+< Cache:misses:16699
 ---
 > Cache:hits:1449112
 > Cache:misses:16595
 2284,2285c2284,2285
-< Cache:hits:1456502
-< Cache:misses:9205
+< Cache:hits:1456501
+< Cache:misses:9206
 ---
 > Cache:hits:1456560
 > Cache:misses:9147
 2297,2298c2297,2298
-< Cache:hits:1449221
-< Cache:misses:16486
+< Cache:hits:1449236
+< Cache:misses:16471
 ---
 > Cache:hits:1449215
 > Cache:misses:16492
 2310,2311c2310,2311
-< Cache:hits:1456684
-< Cache:misses:9023
+< Cache:hits:1456706
+< Cache:misses:9001
 ---
 > Cache:hits:1456667
 > Cache:misses:9040
 2323,2324c2323,2324
-< Cache:hits:1449537
-< Cache:misses:16170
+< Cache:hits:1449401
+< Cache:misses:16306
 ---
 > Cache:hits:1449471
 > Cache:misses:16236
 2336,2337c2336,2337
-< Cache:hits:1456693
-< Cache:misses:9014
+< Cache:hits:1456653
+< Cache:misses:9054
 ---
 > Cache:hits:1456671
 > Cache:misses:9036
 2349,2350c2349,2350
-< Cache:hits:1449605
-< Cache:misses:16102
+< Cache:hits:1449599
+< Cache:misses:16108
 ---
 > Cache:hits:1449476
 > Cache:misses:16231
 2362,2363c2362,2363
-< Cache:hits:1456597
-< Cache:misses:9110
+< Cache:hits:1456757
+< Cache:misses:8950
 ---
 > Cache:hits:1456764
 > Cache:misses:8943
 2375,2376c2375,2376
-< Cache:hits:1449530
-< Cache:misses:16177
+< Cache:hits:1449575
+< Cache:misses:16132
 ---
 > Cache:hits:1449553
 > Cache:misses:16154
 2388,2389c2388,2389
-< Cache:hits:1456807
-< Cache:misses:8900
+< Cache:hits:1456790
+< Cache:misses:8917
 ---
 > Cache:hits:1456800
 > Cache:misses:8907
 2401,2402c2401,2402
-< Cache:hits:1449494
-< Cache:misses:16213
+< Cache:hits:1449536
+< Cache:misses:16171
 ---
 > Cache:hits:1449457
 > Cache:misses:16250
 2414,2415c2414,2415
-< Cache:hits:1456700
-< Cache:misses:9007
+< Cache:hits:1456747
+< Cache:misses:8960
 ---
 > Cache:hits:1456748
 > Cache:misses:8959
 2427,2428c2427,2428
-< Cache:hits:1449530
-< Cache:misses:16177
+< Cache:hits:1449459
+< Cache:misses:16248
 ---
 > Cache:hits:1449516
 > Cache:misses:16191
 2440,2441c2440,2441
-< Cache:hits:1456781
-< Cache:misses:8926
+< Cache:hits:1456719
+< Cache:misses:8988
 ---
 > Cache:hits:1456741
 > Cache:misses:8966
 2453,2454c2453,2454
-< Cache:hits:1449487
-< Cache:misses:16220
+< Cache:hits:1449489
+< Cache:misses:16218
 ---
 > Cache:hits:1449450
 > Cache:misses:16257
 2466,2467c2466,2467
-< Cache:hits:1456759
-< Cache:misses:8948
+< Cache:hits:1456682
+< Cache:misses:9025
 ---
 > Cache:hits:1456711
 > Cache:misses:8996
 2479,2480c2479,2480
-< Cache:hits:1449532
-< Cache:misses:16175
+< Cache:hits:1449468
+< Cache:misses:16239
 ---
 > Cache:hits:1449551
 > Cache:misses:16156
 2492,2493c2492,2493
-< Cache:hits:1456736
-< Cache:misses:8971
+< Cache:hits:1456763
+< Cache:misses:8944
 ---
 > Cache:hits:1456762
 > Cache:misses:8945
