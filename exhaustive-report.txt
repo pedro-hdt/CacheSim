@@ -1,0 +1,2496 @@
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 1
+input:number_of_cache_blocks: 16
+input:cache_block_size: 32
+
+CacheTagBits:23
+CacheOffsetBits:5
+Cache:hits:1186438
+Cache:misses:279269
+Cache:hit-rate:80.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 1
+input:number_of_cache_blocks: 16
+input:cache_block_size: 64
+
+CacheTagBits:22
+CacheOffsetBits:6
+Cache:hits:1279732
+Cache:misses:185975
+Cache:hit-rate:87.3%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 2
+input:number_of_cache_blocks: 16
+input:cache_block_size: 32
+
+CacheTagBits:24
+CacheOffsetBits:5
+Cache:hits:1236130
+Cache:misses:229577
+Cache:hit-rate:84.3%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 2
+input:number_of_cache_blocks: 16
+input:cache_block_size: 64
+
+CacheTagBits:23
+CacheOffsetBits:6
+Cache:hits:1310492
+Cache:misses:155215
+Cache:hit-rate:89.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 4
+input:number_of_cache_blocks: 16
+input:cache_block_size: 32
+
+CacheTagBits:25
+CacheOffsetBits:5
+Cache:hits:1238352
+Cache:misses:227355
+Cache:hit-rate:84.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 4
+input:number_of_cache_blocks: 16
+input:cache_block_size: 64
+
+CacheTagBits:24
+CacheOffsetBits:6
+Cache:hits:1310685
+Cache:misses:155022
+Cache:hit-rate:89.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 8
+input:number_of_cache_blocks: 16
+input:cache_block_size: 32
+
+CacheTagBits:26
+CacheOffsetBits:5
+Cache:hits:1233662
+Cache:misses:232045
+Cache:hit-rate:84.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 8
+input:number_of_cache_blocks: 16
+input:cache_block_size: 64
+
+CacheTagBits:25
+CacheOffsetBits:6
+Cache:hits:1309245
+Cache:misses:156462
+Cache:hit-rate:89.3%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 16
+input:number_of_cache_blocks: 16
+input:cache_block_size: 32
+
+CacheTagBits:27
+CacheOffsetBits:5
+Cache:hits:1232659
+Cache:misses:233048
+Cache:hit-rate:84.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 16
+input:number_of_cache_blocks: 16
+input:cache_block_size: 64
+
+CacheTagBits:26
+CacheOffsetBits:6
+Cache:hits:1307053
+Cache:misses:158654
+Cache:hit-rate:89.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 1
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:21
+CacheOffsetBits:5
+Cache:hits:1281904
+Cache:misses:183803
+Cache:hit-rate:87.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 1
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:20
+CacheOffsetBits:6
+Cache:hits:1361370
+Cache:misses:104337
+Cache:hit-rate:92.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 2
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:22
+CacheOffsetBits:5
+Cache:hits:1308474
+Cache:misses:157233
+Cache:hit-rate:89.3%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 2
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:21
+CacheOffsetBits:6
+Cache:hits:1370137
+Cache:misses:95570
+Cache:hit-rate:93.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 4
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:23
+CacheOffsetBits:5
+Cache:hits:1300743
+Cache:misses:164964
+Cache:hit-rate:88.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 4
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:22
+CacheOffsetBits:6
+Cache:hits:1381559
+Cache:misses:84148
+Cache:hit-rate:94.3%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 8
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:24
+CacheOffsetBits:5
+Cache:hits:1305501
+Cache:misses:160206
+Cache:hit-rate:89.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 8
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:23
+CacheOffsetBits:6
+Cache:hits:1381168
+Cache:misses:84539
+Cache:hit-rate:94.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 16
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:25
+CacheOffsetBits:5
+Cache:hits:1306482
+Cache:misses:159225
+Cache:hit-rate:89.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 16
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:24
+CacheOffsetBits:6
+Cache:hits:1374059
+Cache:misses:91648
+Cache:hit-rate:93.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 32
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:26
+CacheOffsetBits:5
+Cache:hits:1307949
+Cache:misses:157758
+Cache:hit-rate:89.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 32
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:25
+CacheOffsetBits:6
+Cache:hits:1364710
+Cache:misses:100997
+Cache:hit-rate:93.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 64
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:27
+CacheOffsetBits:5
+Cache:hits:1308599
+Cache:misses:157108
+Cache:hit-rate:89.3%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 64
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:26
+CacheOffsetBits:6
+Cache:hits:1364393
+Cache:misses:101314
+Cache:hit-rate:93.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 1
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:19
+CacheOffsetBits:5
+Cache:hits:1397618
+Cache:misses:68089
+Cache:hit-rate:95.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 1
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:18
+CacheOffsetBits:6
+Cache:hits:1431070
+Cache:misses:34637
+Cache:hit-rate:97.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 2
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:20
+CacheOffsetBits:5
+Cache:hits:1413239
+Cache:misses:52468
+Cache:hit-rate:96.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 2
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:19
+CacheOffsetBits:6
+Cache:hits:1444897
+Cache:misses:20810
+Cache:hit-rate:98.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 4
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:21
+CacheOffsetBits:5
+Cache:hits:1428117
+Cache:misses:37590
+Cache:hit-rate:97.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 4
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:20
+CacheOffsetBits:6
+Cache:hits:1443950
+Cache:misses:21757
+Cache:hit-rate:98.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 8
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:22
+CacheOffsetBits:5
+Cache:hits:1429060
+Cache:misses:36647
+Cache:hit-rate:97.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 8
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:21
+CacheOffsetBits:6
+Cache:hits:1449593
+Cache:misses:16114
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 16
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:23
+CacheOffsetBits:5
+Cache:hits:1437114
+Cache:misses:28593
+Cache:hit-rate:98.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 16
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:22
+CacheOffsetBits:6
+Cache:hits:1450025
+Cache:misses:15682
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 32
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:24
+CacheOffsetBits:5
+Cache:hits:1436745
+Cache:misses:28962
+Cache:hit-rate:98.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 32
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:23
+CacheOffsetBits:6
+Cache:hits:1450242
+Cache:misses:15465
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 64
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:25
+CacheOffsetBits:5
+Cache:hits:1437627
+Cache:misses:28080
+Cache:hit-rate:98.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 64
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:24
+CacheOffsetBits:6
+Cache:hits:1450167
+Cache:misses:15540
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 128
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:26
+CacheOffsetBits:5
+Cache:hits:1437630
+Cache:misses:28077
+Cache:hit-rate:98.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 128
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:25
+CacheOffsetBits:6
+Cache:hits:1450222
+Cache:misses:15485
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 256
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:27
+CacheOffsetBits:5
+Cache:hits:1437578
+Cache:misses:28129
+Cache:hit-rate:98.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 256
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:26
+CacheOffsetBits:6
+Cache:hits:1450208
+Cache:misses:15499
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 1
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:17
+CacheOffsetBits:5
+Cache:hits:1430908
+Cache:misses:34799
+Cache:hit-rate:97.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 1
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:16
+CacheOffsetBits:6
+Cache:hits:1452016
+Cache:misses:13691
+Cache:hit-rate:99.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 2
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:18
+CacheOffsetBits:5
+Cache:hits:1445860
+Cache:misses:19847
+Cache:hit-rate:98.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 2
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:17
+CacheOffsetBits:6
+Cache:hits:1453334
+Cache:misses:12373
+Cache:hit-rate:99.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 4
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:19
+CacheOffsetBits:5
+Cache:hits:1449716
+Cache:misses:15991
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 4
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:18
+CacheOffsetBits:6
+Cache:hits:1456872
+Cache:misses:8835
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 8
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:20
+CacheOffsetBits:5
+Cache:hits:1449811
+Cache:misses:15896
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 8
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:19
+CacheOffsetBits:6
+Cache:hits:1457039
+Cache:misses:8668
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 16
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:21
+CacheOffsetBits:5
+Cache:hits:1450022
+Cache:misses:15685
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 16
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:20
+CacheOffsetBits:6
+Cache:hits:1457028
+Cache:misses:8679
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 32
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:22
+CacheOffsetBits:5
+Cache:hits:1450128
+Cache:misses:15579
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 32
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:21
+CacheOffsetBits:6
+Cache:hits:1457080
+Cache:misses:8627
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 64
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:23
+CacheOffsetBits:5
+Cache:hits:1450177
+Cache:misses:15530
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 64
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:22
+CacheOffsetBits:6
+Cache:hits:1457068
+Cache:misses:8639
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 128
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:24
+CacheOffsetBits:5
+Cache:hits:1450225
+Cache:misses:15482
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 128
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:23
+CacheOffsetBits:6
+Cache:hits:1457061
+Cache:misses:8646
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 256
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:25
+CacheOffsetBits:5
+Cache:hits:1450203
+Cache:misses:15504
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 256
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:24
+CacheOffsetBits:6
+Cache:hits:1457082
+Cache:misses:8625
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 512
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:26
+CacheOffsetBits:5
+Cache:hits:1450185
+Cache:misses:15522
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 512
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:25
+CacheOffsetBits:6
+Cache:hits:1457064
+Cache:misses:8643
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 1024
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:27
+CacheOffsetBits:5
+Cache:hits:1450200
+Cache:misses:15507
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: FIFO
+input:associativity: 1024
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:26
+CacheOffsetBits:6
+Cache:hits:1457058
+Cache:misses:8649
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 1
+input:number_of_cache_blocks: 16
+input:cache_block_size: 32
+
+CacheTagBits:23
+CacheOffsetBits:5
+Cache:hits:1186438
+Cache:misses:279269
+Cache:hit-rate:80.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 1
+input:number_of_cache_blocks: 16
+input:cache_block_size: 64
+
+CacheTagBits:22
+CacheOffsetBits:6
+Cache:hits:1279732
+Cache:misses:185975
+Cache:hit-rate:87.3%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 2
+input:number_of_cache_blocks: 16
+input:cache_block_size: 32
+
+CacheTagBits:24
+CacheOffsetBits:5
+Cache:hits:1241463
+Cache:misses:224244
+Cache:hit-rate:84.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 2
+input:number_of_cache_blocks: 16
+input:cache_block_size: 64
+
+CacheTagBits:23
+CacheOffsetBits:6
+Cache:hits:1317813
+Cache:misses:147894
+Cache:hit-rate:89.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 4
+input:number_of_cache_blocks: 16
+input:cache_block_size: 32
+
+CacheTagBits:25
+CacheOffsetBits:5
+Cache:hits:1244940
+Cache:misses:220767
+Cache:hit-rate:84.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 4
+input:number_of_cache_blocks: 16
+input:cache_block_size: 64
+
+CacheTagBits:24
+CacheOffsetBits:6
+Cache:hits:1320970
+Cache:misses:144737
+Cache:hit-rate:90.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 8
+input:number_of_cache_blocks: 16
+input:cache_block_size: 32
+
+CacheTagBits:26
+CacheOffsetBits:5
+Cache:hits:1241739
+Cache:misses:223968
+Cache:hit-rate:84.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 8
+input:number_of_cache_blocks: 16
+input:cache_block_size: 64
+
+CacheTagBits:25
+CacheOffsetBits:6
+Cache:hits:1319604
+Cache:misses:146103
+Cache:hit-rate:90.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 16
+input:number_of_cache_blocks: 16
+input:cache_block_size: 32
+
+CacheTagBits:27
+CacheOffsetBits:5
+Cache:hits:1238077
+Cache:misses:227630
+Cache:hit-rate:84.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 16
+input:number_of_cache_blocks: 16
+input:cache_block_size: 64
+
+CacheTagBits:26
+CacheOffsetBits:6
+Cache:hits:1314939
+Cache:misses:150768
+Cache:hit-rate:89.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 1
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:21
+CacheOffsetBits:5
+Cache:hits:1281904
+Cache:misses:183803
+Cache:hit-rate:87.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 1
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:20
+CacheOffsetBits:6
+Cache:hits:1361370
+Cache:misses:104337
+Cache:hit-rate:92.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 2
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:22
+CacheOffsetBits:5
+Cache:hits:1312626
+Cache:misses:153081
+Cache:hit-rate:89.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 2
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:21
+CacheOffsetBits:6
+Cache:hits:1376857
+Cache:misses:88850
+Cache:hit-rate:93.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 4
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:23
+CacheOffsetBits:5
+Cache:hits:1307781
+Cache:misses:157926
+Cache:hit-rate:89.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 4
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:22
+CacheOffsetBits:6
+Cache:hits:1391203
+Cache:misses:74504
+Cache:hit-rate:94.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 8
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:24
+CacheOffsetBits:5
+Cache:hits:1313758
+Cache:misses:151949
+Cache:hit-rate:89.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 8
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:23
+CacheOffsetBits:6
+Cache:hits:1391216
+Cache:misses:74491
+Cache:hit-rate:94.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 16
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:25
+CacheOffsetBits:5
+Cache:hits:1313649
+Cache:misses:152058
+Cache:hit-rate:89.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 16
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:24
+CacheOffsetBits:6
+Cache:hits:1386675
+Cache:misses:79032
+Cache:hit-rate:94.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 32
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:26
+CacheOffsetBits:5
+Cache:hits:1312452
+Cache:misses:153255
+Cache:hit-rate:89.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 32
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:25
+CacheOffsetBits:6
+Cache:hits:1381629
+Cache:misses:84078
+Cache:hit-rate:94.3%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 64
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:27
+CacheOffsetBits:5
+Cache:hits:1312692
+Cache:misses:153015
+Cache:hit-rate:89.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 64
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:26
+CacheOffsetBits:6
+Cache:hits:1381379
+Cache:misses:84328
+Cache:hit-rate:94.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 1
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:19
+CacheOffsetBits:5
+Cache:hits:1397618
+Cache:misses:68089
+Cache:hit-rate:95.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 1
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:18
+CacheOffsetBits:6
+Cache:hits:1431070
+Cache:misses:34637
+Cache:hit-rate:97.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 2
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:20
+CacheOffsetBits:5
+Cache:hits:1420162
+Cache:misses:45545
+Cache:hit-rate:96.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 2
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:19
+CacheOffsetBits:6
+Cache:hits:1446520
+Cache:misses:19187
+Cache:hit-rate:98.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 4
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:21
+CacheOffsetBits:5
+Cache:hits:1435736
+Cache:misses:29971
+Cache:hit-rate:98.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 4
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:20
+CacheOffsetBits:6
+Cache:hits:1448053
+Cache:misses:17654
+Cache:hit-rate:98.8%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 8
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:22
+CacheOffsetBits:5
+Cache:hits:1438572
+Cache:misses:27135
+Cache:hit-rate:98.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 8
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:21
+CacheOffsetBits:6
+Cache:hits:1453306
+Cache:misses:12401
+Cache:hit-rate:99.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 16
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:23
+CacheOffsetBits:5
+Cache:hits:1446250
+Cache:misses:19457
+Cache:hit-rate:98.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 16
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:22
+CacheOffsetBits:6
+Cache:hits:1453798
+Cache:misses:11909
+Cache:hit-rate:99.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 32
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:24
+CacheOffsetBits:5
+Cache:hits:1446423
+Cache:misses:19284
+Cache:hit-rate:98.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 32
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:23
+CacheOffsetBits:6
+Cache:hits:1453802
+Cache:misses:11905
+Cache:hit-rate:99.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 64
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:25
+CacheOffsetBits:5
+Cache:hits:1446569
+Cache:misses:19138
+Cache:hit-rate:98.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 64
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:24
+CacheOffsetBits:6
+Cache:hits:1453803
+Cache:misses:11904
+Cache:hit-rate:99.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 128
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:26
+CacheOffsetBits:5
+Cache:hits:1446612
+Cache:misses:19095
+Cache:hit-rate:98.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 128
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:25
+CacheOffsetBits:6
+Cache:hits:1453810
+Cache:misses:11897
+Cache:hit-rate:99.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 256
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:27
+CacheOffsetBits:5
+Cache:hits:1446622
+Cache:misses:19085
+Cache:hit-rate:98.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 256
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:26
+CacheOffsetBits:6
+Cache:hits:1453802
+Cache:misses:11905
+Cache:hit-rate:99.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 1
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:17
+CacheOffsetBits:5
+Cache:hits:1430908
+Cache:misses:34799
+Cache:hit-rate:97.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 1
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:16
+CacheOffsetBits:6
+Cache:hits:1452016
+Cache:misses:13691
+Cache:hit-rate:99.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 2
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:18
+CacheOffsetBits:5
+Cache:hits:1447040
+Cache:misses:18667
+Cache:hit-rate:98.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 2
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:17
+CacheOffsetBits:6
+Cache:hits:1453638
+Cache:misses:12069
+Cache:hit-rate:99.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 4
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:19
+CacheOffsetBits:5
+Cache:hits:1451327
+Cache:misses:14380
+Cache:hit-rate:99.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 4
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:18
+CacheOffsetBits:6
+Cache:hits:1457729
+Cache:misses:7978
+Cache:hit-rate:99.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 8
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:20
+CacheOffsetBits:5
+Cache:hits:1451477
+Cache:misses:14230
+Cache:hit-rate:99.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 8
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:19
+CacheOffsetBits:6
+Cache:hits:1457939
+Cache:misses:7768
+Cache:hit-rate:99.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 16
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:21
+CacheOffsetBits:5
+Cache:hits:1451733
+Cache:misses:13974
+Cache:hit-rate:99.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 16
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:20
+CacheOffsetBits:6
+Cache:hits:1457978
+Cache:misses:7729
+Cache:hit-rate:99.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 32
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:22
+CacheOffsetBits:5
+Cache:hits:1451826
+Cache:misses:13881
+Cache:hit-rate:99.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 32
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:21
+CacheOffsetBits:6
+Cache:hits:1458010
+Cache:misses:7697
+Cache:hit-rate:99.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 64
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:23
+CacheOffsetBits:5
+Cache:hits:1451849
+Cache:misses:13858
+Cache:hit-rate:99.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 64
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:22
+CacheOffsetBits:6
+Cache:hits:1458003
+Cache:misses:7704
+Cache:hit-rate:99.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 128
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:24
+CacheOffsetBits:5
+Cache:hits:1451846
+Cache:misses:13861
+Cache:hit-rate:99.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 128
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:23
+CacheOffsetBits:6
+Cache:hits:1457994
+Cache:misses:7713
+Cache:hit-rate:99.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 256
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:25
+CacheOffsetBits:5
+Cache:hits:1451857
+Cache:misses:13850
+Cache:hit-rate:99.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 256
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:24
+CacheOffsetBits:6
+Cache:hits:1457995
+Cache:misses:7712
+Cache:hit-rate:99.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 512
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:26
+CacheOffsetBits:5
+Cache:hits:1451861
+Cache:misses:13846
+Cache:hit-rate:99.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 512
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:25
+CacheOffsetBits:6
+Cache:hits:1457994
+Cache:misses:7713
+Cache:hit-rate:99.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 1024
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:27
+CacheOffsetBits:5
+Cache:hits:1451858
+Cache:misses:13849
+Cache:hit-rate:99.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: LRU
+input:associativity: 1024
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:26
+CacheOffsetBits:6
+Cache:hits:1457988
+Cache:misses:7719
+Cache:hit-rate:99.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 1
+input:number_of_cache_blocks: 16
+input:cache_block_size: 32
+
+CacheTagBits:23
+CacheOffsetBits:5
+Cache:hits:1186438
+Cache:misses:279269
+Cache:hit-rate:80.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 1
+input:number_of_cache_blocks: 16
+input:cache_block_size: 64
+
+CacheTagBits:22
+CacheOffsetBits:6
+Cache:hits:1279732
+Cache:misses:185975
+Cache:hit-rate:87.3%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 2
+input:number_of_cache_blocks: 16
+input:cache_block_size: 32
+
+CacheTagBits:24
+CacheOffsetBits:5
+Cache:hits:1220199
+Cache:misses:245508
+Cache:hit-rate:83.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 2
+input:number_of_cache_blocks: 16
+input:cache_block_size: 64
+
+CacheTagBits:23
+CacheOffsetBits:6
+Cache:hits:1298980
+Cache:misses:166727
+Cache:hit-rate:88.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 4
+input:number_of_cache_blocks: 16
+input:cache_block_size: 32
+
+CacheTagBits:25
+CacheOffsetBits:5
+Cache:hits:1224761
+Cache:misses:240946
+Cache:hit-rate:83.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 4
+input:number_of_cache_blocks: 16
+input:cache_block_size: 64
+
+CacheTagBits:24
+CacheOffsetBits:6
+Cache:hits:1297887
+Cache:misses:167820
+Cache:hit-rate:88.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 8
+input:number_of_cache_blocks: 16
+input:cache_block_size: 32
+
+CacheTagBits:26
+CacheOffsetBits:5
+Cache:hits:1224551
+Cache:misses:241156
+Cache:hit-rate:83.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 8
+input:number_of_cache_blocks: 16
+input:cache_block_size: 64
+
+CacheTagBits:25
+CacheOffsetBits:6
+Cache:hits:1301162
+Cache:misses:164545
+Cache:hit-rate:88.8%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 16
+input:number_of_cache_blocks: 16
+input:cache_block_size: 32
+
+CacheTagBits:27
+CacheOffsetBits:5
+Cache:hits:1224398
+Cache:misses:241309
+Cache:hit-rate:83.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 16
+input:number_of_cache_blocks: 16
+input:cache_block_size: 64
+
+CacheTagBits:26
+CacheOffsetBits:6
+Cache:hits:1300168
+Cache:misses:165539
+Cache:hit-rate:88.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 1
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:21
+CacheOffsetBits:5
+Cache:hits:1281904
+Cache:misses:183803
+Cache:hit-rate:87.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 1
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:20
+CacheOffsetBits:6
+Cache:hits:1361370
+Cache:misses:104337
+Cache:hit-rate:92.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 2
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:22
+CacheOffsetBits:5
+Cache:hits:1310706
+Cache:misses:155001
+Cache:hit-rate:89.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 2
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:21
+CacheOffsetBits:6
+Cache:hits:1369889
+Cache:misses:95818
+Cache:hit-rate:93.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 4
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:23
+CacheOffsetBits:5
+Cache:hits:1312801
+Cache:misses:152906
+Cache:hit-rate:89.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 4
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:22
+CacheOffsetBits:6
+Cache:hits:1388786
+Cache:misses:76921
+Cache:hit-rate:94.8%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 8
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:24
+CacheOffsetBits:5
+Cache:hits:1314737
+Cache:misses:150970
+Cache:hit-rate:89.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 8
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:23
+CacheOffsetBits:6
+Cache:hits:1392884
+Cache:misses:72823
+Cache:hit-rate:95.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 16
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:25
+CacheOffsetBits:5
+Cache:hits:1314773
+Cache:misses:150934
+Cache:hit-rate:89.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 16
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:24
+CacheOffsetBits:6
+Cache:hits:1391896
+Cache:misses:73811
+Cache:hit-rate:95.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 32
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:26
+CacheOffsetBits:5
+Cache:hits:1314782
+Cache:misses:150925
+Cache:hit-rate:89.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 32
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:25
+CacheOffsetBits:6
+Cache:hits:1392876
+Cache:misses:72831
+Cache:hit-rate:95.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 64
+input:number_of_cache_blocks: 64
+input:cache_block_size: 32
+
+CacheTagBits:27
+CacheOffsetBits:5
+Cache:hits:1314492
+Cache:misses:151215
+Cache:hit-rate:89.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 64
+input:number_of_cache_blocks: 64
+input:cache_block_size: 64
+
+CacheTagBits:26
+CacheOffsetBits:6
+Cache:hits:1393152
+Cache:misses:72555
+Cache:hit-rate:95.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 1
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:19
+CacheOffsetBits:5
+Cache:hits:1397618
+Cache:misses:68089
+Cache:hit-rate:95.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 1
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:18
+CacheOffsetBits:6
+Cache:hits:1431070
+Cache:misses:34637
+Cache:hit-rate:97.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 2
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:20
+CacheOffsetBits:5
+Cache:hits:1415117
+Cache:misses:50590
+Cache:hit-rate:96.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 2
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:19
+CacheOffsetBits:6
+Cache:hits:1444821
+Cache:misses:20886
+Cache:hit-rate:98.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 4
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:21
+CacheOffsetBits:5
+Cache:hits:1428454
+Cache:misses:37253
+Cache:hit-rate:97.5%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 4
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:20
+CacheOffsetBits:6
+Cache:hits:1445955
+Cache:misses:19752
+Cache:hit-rate:98.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 8
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:22
+CacheOffsetBits:5
+Cache:hits:1432005
+Cache:misses:33702
+Cache:hit-rate:97.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 8
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:21
+CacheOffsetBits:6
+Cache:hits:1448915
+Cache:misses:16792
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 16
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:23
+CacheOffsetBits:5
+Cache:hits:1435892
+Cache:misses:29815
+Cache:hit-rate:98.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 16
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:22
+CacheOffsetBits:6
+Cache:hits:1449419
+Cache:misses:16288
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 32
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:24
+CacheOffsetBits:5
+Cache:hits:1435764
+Cache:misses:29943
+Cache:hit-rate:98.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 32
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:23
+CacheOffsetBits:6
+Cache:hits:1449819
+Cache:misses:15888
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 64
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:25
+CacheOffsetBits:5
+Cache:hits:1436470
+Cache:misses:29237
+Cache:hit-rate:98.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 64
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:24
+CacheOffsetBits:6
+Cache:hits:1449657
+Cache:misses:16050
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 128
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:26
+CacheOffsetBits:5
+Cache:hits:1436562
+Cache:misses:29145
+Cache:hit-rate:98.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 128
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:25
+CacheOffsetBits:6
+Cache:hits:1449801
+Cache:misses:15906
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 256
+input:number_of_cache_blocks: 256
+input:cache_block_size: 32
+
+CacheTagBits:27
+CacheOffsetBits:5
+Cache:hits:1436536
+Cache:misses:29171
+Cache:hit-rate:98.0%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 256
+input:number_of_cache_blocks: 256
+input:cache_block_size: 64
+
+CacheTagBits:26
+CacheOffsetBits:6
+Cache:hits:1449927
+Cache:misses:15780
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 1
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:17
+CacheOffsetBits:5
+Cache:hits:1430908
+Cache:misses:34799
+Cache:hit-rate:97.6%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 1
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:16
+CacheOffsetBits:6
+Cache:hits:1452016
+Cache:misses:13691
+Cache:hit-rate:99.1%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 2
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:18
+CacheOffsetBits:5
+Cache:hits:1445999
+Cache:misses:19708
+Cache:hit-rate:98.7%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 2
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:17
+CacheOffsetBits:6
+Cache:hits:1453434
+Cache:misses:12273
+Cache:hit-rate:99.2%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 4
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:19
+CacheOffsetBits:5
+Cache:hits:1449016
+Cache:misses:16691
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 4
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:18
+CacheOffsetBits:6
+Cache:hits:1456427
+Cache:misses:9280
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 8
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:20
+CacheOffsetBits:5
+Cache:hits:1449209
+Cache:misses:16498
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 8
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:19
+CacheOffsetBits:6
+Cache:hits:1456646
+Cache:misses:9061
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 16
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:21
+CacheOffsetBits:5
+Cache:hits:1449399
+Cache:misses:16308
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 16
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:20
+CacheOffsetBits:6
+Cache:hits:1456696
+Cache:misses:9011
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 32
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:22
+CacheOffsetBits:5
+Cache:hits:1449503
+Cache:misses:16204
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 32
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:21
+CacheOffsetBits:6
+Cache:hits:1456756
+Cache:misses:8951
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 64
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:23
+CacheOffsetBits:5
+Cache:hits:1449494
+Cache:misses:16213
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 64
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:22
+CacheOffsetBits:6
+Cache:hits:1456744
+Cache:misses:8963
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 128
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:24
+CacheOffsetBits:5
+Cache:hits:1449550
+Cache:misses:16157
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 128
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:23
+CacheOffsetBits:6
+Cache:hits:1456720
+Cache:misses:8987
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 256
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:25
+CacheOffsetBits:5
+Cache:hits:1449541
+Cache:misses:16166
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 256
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:24
+CacheOffsetBits:6
+Cache:hits:1456741
+Cache:misses:8966
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 512
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:26
+CacheOffsetBits:5
+Cache:hits:1449539
+Cache:misses:16168
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 512
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:25
+CacheOffsetBits:6
+Cache:hits:1456756
+Cache:misses:8951
+Cache:hit-rate:99.4%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 1024
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 32
+
+CacheTagBits:27
+CacheOffsetBits:5
+Cache:hits:1449563
+Cache:misses:16144
+Cache:hit-rate:98.9%
+
+
+input:trace_file: mem_trace.txt
+input:replacement_policy: Random
+input:associativity: 1024
+input:number_of_cache_blocks: 1024
+input:cache_block_size: 64
+
+CacheTagBits:26
+CacheOffsetBits:6
+Cache:hits:1456709
+Cache:misses:8998
+Cache:hit-rate:99.4%
+
+
