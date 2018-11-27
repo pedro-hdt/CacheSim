@@ -177,6 +177,7 @@ void replace_fifo(uint32_t  tag, set_t curr_set, uint32_t access_number) {
      * have the valid bit already set, so there is no need to do that */
 }
 
+
 void replace_lru(uint32_t  tag, set_t curr_set, uint32_t access_number) {
     uint32_t least_recent_access = curr_set.blocks[0].last_access;
     uint32_t least_recent_access_idx = 0;
@@ -195,6 +196,7 @@ void replace_lru(uint32_t  tag, set_t curr_set, uint32_t access_number) {
     curr_set.blocks[least_recent_access_idx].tag = tag;
     // Again, valid bit should already be set
 }
+
 
 void replace_random(uint32_t  tag, set_t curr_set) {
     // Evict a random block within the set
@@ -364,9 +366,41 @@ int main(int argc, char** argv) {
         if (access.address == 0)
             break;
 
-        /* Add your code here */
-        access_cache(access.address, access_number);
+        /**********************************************************************
+         *     MY MAIN CODE STARTS HERE: 
+         *********************************************************************/
 
+        uint32_t tag = get_tag(address);
+        uint32_t index = get_index(address);
+
+        /* For readability we introduce a current set. That is, the set
+        * the given address is conditioned to correspond to, given the
+        * associativity. Because the set struct points to the blocks, 
+        * rather than sotring them locally, we don't need to make this
+        * current set a pointer. */
+        set_t curr_set = my_cache.sets[index];
+
+        for (int i = 0; i < associativity; i++) {
+            /* Again, for readability, we introduce a current block. However,
+            * this time it must be a pointer to block in the set, otherwise
+            * the changes would have no effect. */
+            block_t *curr_block = &curr_set.blocks[i];
+            /* On a hit: update last_access field (whether or not LRU is the
+            * replacement policy, since we would have to check ) */
+            if (curr_block->tag == tag && curr_block->valid) {
+                curr_block->last_access = access_number;
+                g_result.cache_hits++; // HIT!
+                return;
+            }
+        }
+
+        // If execution reaches this point:
+        g_result.cache_misses++; // MISS!
+
+        // Write the requested block to cache
+        write_to_cache(tag, curr_set, access_number);
+
+        // Finally, increment the access number
         access_number++;
 
     }
@@ -377,6 +411,11 @@ int main(int argc, char** argv) {
     }
     // then the pointer to the sets
     free(my_cache.sets);
+
+    /**************************************************************************
+     *     END OF MY CODE
+     * ***********************************************************************/
+
 
     /* Do not modify code below. */
     /* Make sure that all the parameters are appropriately populated. */
